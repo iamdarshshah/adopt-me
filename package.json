@@ -4,7 +4,7 @@
   "description": "React App.",
   "main": "App.js",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel src/index.html",
     "formate": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/iamdarshshah/adopt-me#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
