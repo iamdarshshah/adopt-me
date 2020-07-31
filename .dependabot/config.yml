@@ -1,10 +1,13 @@
 version: 1
-update_configs:
-  - package_manager: "javascript"
-    directory: "/"
-    update_schedule: "daily"
+updates:
+  - package-ecosystem: "npm"
+      directory: "/"
+      schedule:
+        interval: "daily"
+      allow:
+        - dependency-type: "all"
     automerged_updates:
       - match:
-          dependency_type: "all"
-          update_type: "all"
+        dependency_type: "all"
+        update_type: "all"
     version_requirement_updates: "widen_ranges"
